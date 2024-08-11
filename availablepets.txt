@@ -1,0 +1,8 @@
+1:jana:Burmese cat:Kitten:Male:Other Dogs, Other Cats:Yes:very good cat:user1:user1:user1@gmail.com
+2:jana:German Shepard:Young:Male:Other Dogs, Other Cats:Yes:very good dog:user3:user3:user3#gmail.com
+3:jana:German Shepard:Puppy:Female:None:No:Not a good dog:user4:user4:user4@gmail.com
+4:jana:Bengal cat:Mature:Male:Other Cats:No:he is a fun cat:user5:user5:user5@gmail.com
+5:jana:Corgi:Puppy:Female:Other Cats:Yes:great dog!!:user5:user5:user5@gmail.com
+6:jana:British Shorthair:Young:Male:Other Dogs, Other Cats:Yes:this is a good cat:user6:user6:user6@gmail.com
+7:jana:Siberian Husky:Young:Male:Other Dogs, Other Cats:Yes:fun and happy dog:user7:user7:user7@gmail.com
+8:jana:Golden Retriever:Puppy:Male:Other Cats:Yes:very fun and happy:user7:user7:user7@gmail.com

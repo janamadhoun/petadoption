@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furry Finds Center</title>
+    <link rel="stylesheet" href="css/styleQ7.css">
+    <script src="script/time.js"></script>
+</head>
+
+<body>
+    <%- include('header.ejs')%>
+    <%- include('sidebar.ejs')%>
+<div class = "content">
+<div class = "dogcare" class="tabcontent">
+    <section class = "dcare">
+        <br><h2>General Dog Care: A Guide to Ensuring Your Dog's Happiness and Health!</h2><br>
+        <fieldset id = "feedingDog"> 
+        <legend class = "legend">Feeding</legend>
+        Keep your pup's tummy happy with VCA Canada's dog feeding guidlines and answers to all your questions.
+        <a href = "https://vcacanada.com/know-your-pet/nutrition-general-feeding-guidelines-for-dogs">
+        <br> Visit VCA Canada</a><br>
+        </fieldset>
+        <fieldset id = "groomingDog">
+            <legend class = "legend"> Grooming </legend>
+            A clean dog is a happy dog! Discover the best grooming tips provided by the ASPCA.
+            <a href = "https://www.aspca.org/pet-care/dog-care/dog-grooming-tips"> <br>Visit ASPCA</a><br>
+        </fieldset>
+        <fieldset id ="fleasticks">
+            <legend class = "legend"> Fleas and Ticks</legend>
+                Summer's here, and so are those pesky flees and ticks! The ASPCA has all the information to keep your pets parasite-free.
+                <a href = "https://www.aspca.org/pet-care/general-pet-care/fleas-and-ticks"><br>Visit ASPCA</a><br>
+            <br>
+        </fieldset>
+        <fieldset id ="exercise">
+            <legend class = "legend">Excercise </legend>
+                Who doesnt love a summer walk? VCA Canada shares the best exercise tips to keep your furry friend fit and healthy!
+                <a href = "https://vcacanada.com/know-your-pet/healthy-exercise-for-dogs"><br>Visit VCA Canada</a><br>
+        </fieldset>       
+    </section>
+</div>
+</div>
+<%- include('footer.ejs')%>
+</body>
+</html>

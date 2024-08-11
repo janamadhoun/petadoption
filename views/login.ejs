@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Furry Finds Center</title>
+        <link rel="stylesheet" href="css/styleQ7.css">
+        <script src="script/time.js"></script>
+    </head>
+    <body>
+    <%- include('header.ejs')%>
+    <%- include('sidebar.ejs')%>
+    <div class = "content">
+        <% if (message) { %>
+            <%- include('msg.ejs') %>
+          <% } %>     
+        <div class = "login">
+            <div class = "tabcontent">
+                <form id = "login" method = "post" action = "/login">
+                    <fieldset id = "loginpage">
+                        <legend class = "legend">Login</legend>
+                        Username:<br>
+                        <input type="text" name="user" placeholder="Username" id = "user" required><br><br>
+                        Password:<br>
+                        <input type="password" name="pass" placeholder="Password" id = "pass" required><br><br>
+                        <!-- submit button -->
+                        <input type="submit" value="Login"><br><br>
+                        <span>Don't have an account? <a href="/signup" id = "link">Create an account</a></span>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    </body>
+    <%- include('footer.ejs')%>
+</html>

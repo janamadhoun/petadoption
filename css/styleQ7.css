@@ -1,0 +1,520 @@
+/* Header */
+.header {
+    padding-top:30px;
+    font-size: 20px;
+    height: 90px;
+    background-color: lightblue;
+    color: white;
+    text-align: left center;
+    font-family:  'Montserrat', sans-serif;
+    text-transform: uppercase;
+    border-bottom: 3px solid #DC143C;
+    text-shadow: 1px 1px 0px #DC143C,
+        2px 2px 0px #DC143C,
+        3px 3px 0px #DC143C;
+    
+    max-width: 100%;
+}
+
+#datetime {
+    font-size:14px;
+    text-shadow:1px 1px 0px #DC143C;
+}
+
+#dogpic, #dogpic1, #dogpic2 {
+    width: 100px;
+    display:block;
+    height:50px;
+    float: right;  
+}
+
+@media (min-width: 767px) {
+    .header {
+        font-size:20px;}}
+
+@media (max-width: 767px) {
+    .header{
+        font-size:10px;}}
+
+
+
+/* Home Page */
+#feedback, #aboutus {
+    width:900px;
+    height:200px;
+    border: 2px solid #DC143C;
+    max-width: 100%;
+    background-color: white;
+    color: rgb(78, 78, 78);
+    padding: 5px;
+    font-family:'Corben', Georgia, Times, serif;
+    font-size:18px;
+    text-align:center;
+
+}
+
+@media (min-width: 767px) {
+    #feedback, #aboutus {
+        font-size:18px;}}
+
+@media (max-width: 767px) {
+    #feedback, #aboutus{
+        font-size:13px;}}
+
+    
+
+/* Footer */
+.footer {
+    padding:30px;
+    font-size: 20px;
+    height: 100px;
+    background-color: lightblue;
+    color: white;
+    text-align: center;
+    font-size:16px;
+    font-family: 'Corben', Georgia, Times, serif;
+    margin-top:500px;
+    border-top: 3px solid #DC143C;
+    max-width: 100%;
+}
+.footer a {
+    color:white;
+    text-decoration:underline;
+}
+
+
+* {
+    margin:0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+
+/* Sidebar */
+.sidebar {
+    width: 180px;
+    height: 60%;
+    position:absolute;
+    left:0;
+    background-color: white;
+    max-width: 100%;
+}
+
+.sidebar ul a {
+    display:block;
+    height: 200%;
+    width: 100%;
+    line-height:40px;
+    font-size: 15px;
+    color:  #DC143C;
+    padding:5px;
+    border-top: 1px solid;
+    font-family:'Corben', Georgia, Times, serif;
+}
+
+ul li:hover a{
+    padding-left:30px;
+}
+
+.sidebar ul a li {
+    margin-right: 16px;
+}
+
+.content {
+    margin-left: 200px;
+    padding: 20px;
+}
+
+.tabcontent:target {
+    display: block;
+}
+
+.search {
+    font-size: 18px;
+}
+.highlight {
+    color:  #DC143C;}
+
+
+/* Home */
+.home {
+    text-align:center;
+    color:#DC143C;
+    font-family:'Corben', Georgia, Times, serif;
+    font-size:18px;
+    margin-top:30px;
+    max-width: 100%;
+}
+#link {
+    text-decoration:none;
+    font-family:'Corben', Georgia, Times, serif;
+    font-size:18px;
+    color:#DC143C;
+    font-weight:bold;
+}
+#link:hover {
+    text-decoration:underline;
+}
+
+
+.normal {
+    text-align:center;
+    color:rgb(78, 78, 78);
+    
+}
+
+#browse {
+    text-align:center;
+    color:#DC143C;
+    font-family:'Corben', Georgia, Times, serif;
+    font-size:18px;
+    margin-top:30px;
+    max-width: 100%;
+}
+
+
+/* Find a Cat and Dog forms */
+#cat, #dog{
+    width: 900px;
+    background-color: white;
+    border: 2px solid #DC143C;
+    color: rgb(78, 78, 78);
+    font-family:'Corben', Georgia, Times, serif;
+    padding: 5px;
+    accent-color:rgb(155, 228, 255);
+    text-align: center;
+    font-size:20px;
+    max-width: 100%;
+}
+#cat, #dog legend{
+    color: rgb(78, 78, 78);
+ }
+@media (min-width: 767px) {
+    #cat, #dog {
+        font-size:18px;}}
+
+@media (max-width: 767px) {
+    #cat, #dog{
+        font-size:13px;}}
+
+
+
+/* Dog Care and Cat Care  */
+
+#feedingCat, #groomingCat, #litter, #playtime, #feedingDog, #groomingDog, #exercise, #fleasticks {
+    width: 900px;
+    height:100px;
+    background-color: white;
+    border: 2px solid #DC143C;
+    color: rgb(78, 78, 78);
+    padding: 5px;
+    font-family:'Corben', Georgia, Times, serif;
+    text-align: center;
+    font-size:18px;
+    max-width: 100%;
+
+  }
+  @media (min-width: 767px) {
+    #feedingCat, #groomingCat, #litter, #playtime, #feedingDog, #groomingDog, #exercise, #fleasticks {
+        font-size:18px;    
+    }
+}
+  @media (max-width: 767px) {
+    #feedingCat, #groomingCat, #litter, #playtime, #feedingDog, #groomingDog, #exercise, #fleasticks{
+        font-size:13px;
+    }
+}
+.dcare a, .ccare a {
+    color:  #DC143C;
+    font-weight: bold;
+    text-decoration:none;
+
+}
+.dcare a:hover, .ccare a:hover  {
+    text-decoration:underline;
+
+}
+.ccare, .dcare, #giveaway{
+    color:  #DC143C;
+    text-align:center;
+}
+
+
+/* Give away and contact info forms */
+#dog-giveaway, #cat-giveaway {
+    float: none;
+    width: 100%;
+    height: auto;
+    margin: 10px 0;
+}
+
+@media (min-width: 767px) {
+    #dog-giveaway {
+        float: left;
+        width: calc(50% - 10px);
+        height: 500px;
+    }
+
+    #cat-giveaway {
+        float: right;
+        width: calc(50% - 10px);
+        height: 500px;
+    }
+}
+
+@media (max-width: 767px) {
+    #dog-giveaway, #cat-giveaway {
+        float: none;
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+}
+
+#dog-giveaway, #cat-giveaway, #contactinfo {
+    background-color: white;
+    border: 2px solid #DC143C;
+    color: rgb(78, 78, 78);
+    padding: 5px;
+    font-family:'Corben', Georgia, Times, serif;
+    accent-color:rgb(155, 228, 255);
+    text-align: center;
+    box-sizing: border-box;
+    margin-bottom:20px;
+
+
+}
+
+#dog-giveaway, #cat-giveaway, #contactinfo legend {
+    font-size: 18px;
+
+}
+
+.legend {
+    font-size: 18px;
+    color:#DC143C;
+    font-weight:bold;
+}
+
+#tellus1, #tellus2 {
+    width: 400px;
+    padding: 0 0 80px 0;
+    border: 2px solid #DC143C;
+    font-family:'Corben', Georgia, Times, serif;
+    font-size: 18px;
+    max-width: 100%;
+}
+#fname, #lname, #email {
+    border: 2px solid #DC143C;
+    font-family:'Corben', Georgia, Times, serif;
+    font-size: 18px;
+    max-width: 100%;
+}
+
+#petsavail {
+    width:900px;
+    background-color: white;
+    border: 2px solid #DC143C;
+    color: rgb(78, 78, 78);
+    height: 260px;
+    padding: 5px;
+    font-family:'Corben', Georgia, Times, serif;
+    accent-color:rgb(155, 228, 255);
+    text-align: center;
+    box-sizing: border-box;
+    margin-bottom:20px;
+ 
+}
+
+#petitle{
+    margin-right:60px;
+}
+
+
+
+/* Contact Us Page */
+
+#contactus {
+    background-color: white;
+    border: 2px solid #DC143C;
+    color: rgb(78, 78, 78);
+    padding: 5px;
+    width: 900px;
+    height: 200px;
+    text-align:center;
+    font-size: 18px;
+    font-family: 'Corben', Georgia, Times, serif;
+    max-width:100%;
+}
+
+#contacticon {
+    width: 40px;
+    height: 40px;
+    background-color: rgb(255, 255, 255);
+}
+.contact {
+    justify-content: center;
+    color: #DC143C;
+    width: 100%;
+    text-align: center;
+}
+.contact-header {
+    width: 100%;
+    text-align: center;
+}
+.icon-text-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.center-text {
+    margin: 0;
+    text-align: center;
+}
+.text {
+    font-size: 16px;
+}
+
+
+
+.tabcontent input[type = submit], .tabcontent input[type = reset]{
+    background:#DC143C;
+    padding: 10px 17px 10px 17px;
+    margin-right: 10px;
+    font-family:'Corben', Georgia, Times, serif;
+    color:white;
+    border: none; }
+
+.button {
+    background:#DC143C;
+    padding: 10px 17px 10px 17px;
+    margin-right: 10px;
+    font-family:'Corben', Georgia, Times, serif;
+    color:white;
+    border: none; 
+
+}
+
+.button:hover {
+    background-color:black;
+}
+    
+
+
+/* Privacy */
+#privacysection {
+    width: 850px;
+    height:auto;
+    padding: 5px;
+    border: 2px solid #DC143C;
+    max-width: 100%;
+    text-align: center;
+    font-size:18px;
+    background-color: white;
+    color: rgb(78, 78, 78);
+    font-family:'Corben', Georgia, Times, serif;
+    text-align: center;
+}
+@media (min-width: 767px) {
+    #privacysection {
+        font-size:18px;}}
+@media (max-width: 767px) {
+    #privacysection{
+        font-size:13px;}}
+
+
+
+
+.content-area{
+    font-family:'Corben', Georgia, Times, serif;
+    text-align: center;
+    font-size:18px;
+    color:#DC143C;
+
+}
+
+.nonefound {
+    margin-right:200px;
+    font-family:'Corben', Georgia, Times, serif;
+    text-align: center;
+    font-size:18px;
+    color:rgb(78, 78, 78);
+}
+
+
+
+
+/* Login Page */
+#loginpage {
+width: 900px;
+height:250px;
+background-color: white;
+border: 2px solid #DC143C;
+color: rgb(78, 78, 78);
+padding: 5px;
+font-family:'Corben', Georgia, Times, serif;
+text-align: center;
+font-size:18px;
+max-width: 100%;
+}
+#user, #pass {
+border: 2px solid #DC143C;
+font-family:'Corben', Georgia, Times, serif;
+font-size: 18px;
+max-width: 100%;
+}
+@media (min-width: 767px) {
+#loginpage {
+    font-size:18px;}}
+@media (max-width: 767px) {
+#loginpage{
+    font-size:13px;}}
+
+/* Create an account page */
+#signuppage {
+    width: 900px;
+    height:400px;
+    background-color: white;
+    border: 2px solid #DC143C;
+    color: rgb(78, 78, 78);
+    padding: 5px;
+    font-family:'Corben', Georgia, Times, serif;
+    text-align: center;
+    font-size:18px;
+    max-width: 100%;
+    }
+    #user, #pass {
+    border: 2px solid #DC143C;
+    font-family:'Corben', Georgia, Times, serif;
+    font-size: 18px;
+    max-width: 100%;
+    }
+    @media (min-width: 767px) {
+    #signuppage {
+        font-size:18px;}}
+    @media (max-width: 767px) {
+    #signuppage{
+        font-size:13px;}}
+
+    #usernamereq, #passwordreq {
+        font-size:14px;    
+        list-style: none;
+        padding-left: 20px; 
+    }  
+    #usernamereq li::before, #passwordreq li::before {
+        content: '\2605'; 
+        color: #DC143C; 
+        margin-right: 4px; 
+        font-size: 10px; }
+
+/* Logout */
+.logout {
+    color: rgb(78, 78, 78);
+    padding: 5px;
+    font-family:'Corben', Georgia, Times, serif;
+    text-align: center;
+    font-size:18px;
+    max-width: 100%;
+}

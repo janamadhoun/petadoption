@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Furry Finds Center</title>
+        <link rel="stylesheet" href="css/styleQ7.css">
+        <script src="script/time.js"></script>
+    </head>
+    <body>
+    <%- include('header.ejs')%>
+    <%- include('sidebar.ejs')%>
+        <div class = "content">
+            <section id = "giveaway">
+                <div class="tabcontent">
+                    <h2>Have a pet to give away? </h2>
+                    <p>Fill out the form below!</p>
+                    <form id = "giveaway" action = "/give" method = "POST">
+                        <fieldset id = "dog-giveaway">
+                            <input type="hidden" name="type" id="petType" value="">
+                            <legend class = "legend">Dog's Details</legend><br>
+                            <label for= "dogBreed">Breed: </label><br>
+                            <select name = "dogBreed">
+                                <option value="German Shepard">German Shepard</option>
+                                <option value="French Bulldog">French Bulldog</option>
+                                <option value="Poodle">Poodle</option>
+                                <option value="Siberian Husky">Siberian Husky</option>
+                                <option value="Great Dane">Great Dane</option>
+                                <option value="Corgi">Corgi</option>
+                                <option value="Chihuahua">Chihuahua</option>
+                                <option value="Boxer">Boxer</option>
+                                <option value="Golden Retriever">Golden Retriever</option>
+                                <option value="Doesnt Matter">Breed does not matter</option>
+                            </select><br><br>
+                                <label>Age:</label><br>
+                                <select name = "dogAge">
+                                    <option value="Puppy"> Puppy: 0 - 6 months</option>
+                                    <option value="Juvenille">Juvenille: 6 - 12 months  </option>
+                                    <option value="Young">Young Adult: 1 - 2 years</option>
+                                    <option value="Mature">Mature Adult: 2 - 6 years</option>
+                                    <option value="Seniors">Senior: 7 - 11 years</option>
+                                    <option value="Doesnt Matter"> 11+ years </option>
+                                </select><br><br>
+                                <label>Gender: </label><br>
+                                    <label><input type ="radio" id = "maleGiveDog" name = "dogGender"
+                                        value = "Male">
+                                    Male </label>
+                                    <label><input type ="radio" id = "femaleGiveDog" name = "dogGender"
+                                        value = "Female">
+                                    Female </label><br><br>
+                                
+                                <label>Gets along with: </label><br>
+                                <label><input type ="checkbox" id = "otherdog1" name = "dogGetAlong[]"
+                                    value = "Other Dogs">
+                                Other dogs </label>
+                                <label><input type ="checkbox" id = "othercats1" name = "dogGetAlong[]"
+                                    value = "Other Cats">
+                                Other cats </label>
+                                <label><input type ="checkbox" id = "none1" name = "dogGetAlong[]"
+                                    value = "None">
+                                None</label><br><br>
+        
+                                <label>Is suitable for a family with children? </label><br>
+                                <input type = "radio" id="yes1" name ="dog_suitable" value="Yes">
+                                <label>Yes</label>
+                                <input type = "radio" id = "no1" name = "dog_suitable" value = "No">
+                                <label>No </label><br><br>
+        
+                                <label for = "tellus1">Tell us all about your dog!</label><br>
+                                <input type = "text" id="tellus1" name = "dogComments" maxlength="50" minlength="10"><br><br>
+        
+                                </fieldset>
+                        <fieldset id = "cat-giveaway">
+                            <legend class = "legend">Cat's Details</legend><br>
+                            <label for = catBreed>Breed:</label><br>
+                            <select name = "catBreed">
+                                <option value="Persian cat">Persian cat</option>
+                                <option value="Siberian cat">Siberian cat</option>
+                                <option value="Siamese cat">Siamese cat</option>
+                                <option value="Scottish Fold">Scottish Fold </option>
+                                <option value="British Shorthair">British Shorthair</option>
+                                <option value="Sphynx cat">Sphynx cat</option>
+                                <option value="Bengal cat">Bengal cat</option>
+                                <option value="Burmese cat">Burmese cat</option>
+                                <option value="Maine Coon">Maine Coon</option>
+                                <option value="Doesnt Matter">Breed does not matter</option>
+                            </select><br><br>
+                            <label>Age: </label><br>
+                                <select name = "catAge">
+                                    <option value="Kitten"> Kitten: 0 - 6 months</option>
+                                    <option value="Junior"> Junior: 7 - 24 months  </option>
+                                    <option value="Young">Young Adult: 3 - 6 years</option>
+                                    <option value="Mature">Mature Adult: 7 - 10 years</option>
+                                    <option value="Seniors">Senior: 11 - 14 years</option>
+                                    <option value="Doesnt Matter">14+ years</option>
+                                </select><br><br>
+                            <label>Gender: </label><br>
+                            <label><input type ="radio" id = "maleGiveCat" name = "catGender" value = "Male">
+                            Male </label>
+                            <label><input type ="radio" id = "femaleGiveCat" name = "catGender" value = "Female">
+                            Female </label><br><br>
+                            
+                            <label>Gets along with: </label><br>
+                            <label><input type ="checkbox" id = "otherdog2" name = "catGetAlong[]"
+                                value = "Other Dogs">
+                            Other dogs </label>
+                            <label><input type ="checkbox" id = "othercats2" name = "catGetAlong[]"
+                                value = "Other Cats">
+                            Other cats </label>
+                            <label><input type ="checkbox" id = "none2" name = "catGetAlong[]"
+                                value = "None">
+                            None</label><br><br>
+        
+                            <label>Is suitable for a family with children? </label><br>
+                            <input type = "radio" id="yes2" name ="cat_suitable" value="Yes">
+                            <label>Yes</label>
+                            <input type = "radio" id = "no2" name = "cat_suitable" value = "No">
+                            <label>No </label><br><br>
+        
+                            <label for = "tellus2" >Tell us all about your cat!</label><br>
+                            <input type = "text" id="tellus2" name = "catComments" maxlength="100" minlength="5" ><br><br>
+                        </fieldset><br><br>
+                        
+                        <fieldset id = "contactinfo">
+                            <legend class = "legend">Contact Information</legend><br>
+                            <label for="fname">  First name: </label>
+                            <input type="text" id="fname" name="ownerGivenName"><br>
+        
+                            <br><label for="lname">Last name: </label>
+                            <input type="text" id="lname" name="ownerSurname"><br><br>
+                            <label for="email"> Email: </label>
+                            <input type = "text" id="email" name="ownerEmail" ><br><br>
+                        </fieldset><br>
+                        
+                        <input type ="submit" value = "Submit">
+                        <input type = "reset" value = "Reset">
+                    </form>
+                </div>
+            </section>
+        </div>
+        <!-- <script src="script/giveAway.js"></script> -->
+        <script src="script/giveForm.js"></script>
+        <%- include('footer.ejs')%>
+    </body>
+</html>
+
+            

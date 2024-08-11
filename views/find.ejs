@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Furry Finds Center</title>
+        <link rel="stylesheet" href="css/styleQ7.css">
+        <script src="script/time.js"></script>
+    </head>
+    <body>
+    <%- include('header.ejs')%>
+    <%- include('sidebar.ejs')%>
+    <div class = "content">
+        <div class ="find">
+            <div class = "tabcontent">
+                <fieldset id = "cat">
+                    <section id="catsection">
+                        <h3 class = "highlight">Your ideal cat friend is...</h3><br>
+                        <div class = "search">
+                            <form id = "findCatForm" action="/find" method="POST">
+                                <input type="hidden" name="type" value="Cat">
+                                <label > Preffered Breed: 
+                                    <select name = "catBreed">
+                                        <option value="Persian cat">Persian cat</option>
+                                        <option value="Siberian cat">Siberian cat</option>
+                                        <option value="Siamese cat">Siamese cat</option>
+                                        <option value="Scottish Fold">Scottish Fold </option>
+                                        <option value="British Shorthair">British Shorthair</option>
+                                        <option value="Sphynx cat">Sphynx cat</option>
+                                        <option value="Bengal cat">Bengal cat</option>
+                                        <option value="Burmese cat">Burmese cat</option>
+                                        <option value="Maine Coon">Maine Coon</option>
+                                        <option value="Doesnt Matter">Breed does not matter</option>
+                                    </select>
+                                </label><br><br>
+        
+                                <label>Preffered Age:
+                                    <select name = "catAge">
+                                        <option value="Kitten"> Kitten: 0 - 6 months</option>
+                                        <option value="Junior"> Junior: 7 - 24 months  </option>
+                                        <option value="Young">Young Adult: 3 - 6 years</option>
+                                        <option value="Mature">Mature Adult: 7 - 10 years</option>
+                                        <option value="Seniors">Senior: 11 - 14 years</option>
+                                        <option value="Doesnt Matter">14+ years</option>
+                                    </select>
+                                </label><br><br>
+        
+                                <label>Preferred Gender: </label><br>
+                                <label><input type ="checkbox" id = "maleCat" name = "catGender"
+                                    value = "Male">
+                                Male </label>
+                                <label><input type ="checkbox" id = "femaleCat" name = "catGender"
+                                    value = "Female">
+                                Female </label>
+                                <label><input type ="checkbox" id = "dmc" name = "catGender"
+                                    value = "Doesnt Matter">
+                                Gender does not matter </label><br><br>
+                            
+                                <label>Does it need to get along with the following:</label><br>
+                                <label><input type ="checkbox" id = "fdogs" name = "catGetAlong[]"
+                                    value = "Other Dogs">
+                                Other dog(s) </label>
+                                <label><input type ="checkbox" id = "fcat" name = "catGetAlong[]"
+                                    value = "Other Cats">
+                                Other cat(s) </label>
+                                <label><input type ="checkbox" id = "fchild" name = "catGetAlong[]"
+                                    value = "Children">
+                                Young children </label>
+                                <label><input type ="checkbox" id = "fnone" name = "catGetAlong[]"
+                                    value = "None">
+                                None of the above </label><br><br>    
+                            
+                                <br><input type ="submit" value = "Find Cats">
+                                <input type = "reset" value = "Reset">
+                                <br><br>
+                            </form>
+                        </div>
+                    </section>
+        
+                </fieldset><br>
+                
+                <fieldset id="dog"> 
+                    <section id="dogsection">
+                        <h3 class = "highlight">Your ideal dog friend is...</h3><br>
+                        <div class = "search">
+                            <form id = "findDogForm" action="/find" method="POST" >
+                                <input type="hidden" name="type" value="Dog">
+                                <label > Preffered Breed: 
+                                    <select name = "dogBreed">
+                                        <option value="German Shepard">German Shepard</option>
+                                        <option value="French Bulldog">French Bulldog</option>
+                                        <option value="Poodle">Poodle</option>
+                                        <option value="Siberian Husky">Siberian Husky</option>
+                                        <option value="Great Dane">Great Dane</option>
+                                        <option value="Corgi">Corgi</option>
+                                        <option value="Chihuahua">Chihuahua</option>
+                                        <option value="Boxer">Boxer</option>
+                                        <option value="Golden Retriever">Golden Retriever</option>
+                                        <option value="Doesnt Matter">Breed does not matter</option>
+                                    </select>
+                                </label><br><br>
+        
+                                <label>Preffered Age:
+                                    <select name = "dogAge">
+                                        <option value="Puppy"> Puppy: 0 - 6 months</option>
+                                        <option value="Juvenille">Juvenille: 6 - 12 months  </option>
+                                        <option value="Young">Young Adult: 1 - 2 years</option>
+                                        <option value="Mature">Mature Adult: 2 - 6 years</option>
+                                        <option value="Seniors">Senior: 7 - 11 years</option>
+                                        <option value="Doesnt Matter"> 11+ years </option>
+                                    </select>
+                                </label><br><br>
+        
+                                <label>Preferred Gender: </label><br>
+                                <label><input type ="checkbox" id = "maleDog" name = "dogGender"
+                                    value = "Male">
+                                Male </label>
+                                <label><input type ="checkbox" id = "femaleDog" name = "dogGender"
+                                    value = "Female">
+                                Female </label>
+                                <label><input type ="checkbox" id = "dmd" name = "dogGender"
+                                    value = "Doesnt Matter">
+                                Gender does not matter </label><br><br>
+                            
+                                <label>Does it need to get along with the following:</label><br>
+                                <label><input type ="checkbox" id = "fdogs1" name = "dogGetAlong[]"
+                                    value = "Other Dogs">
+                                Other dog(s) </label>
+                                <label><input type ="checkbox" id = "fcat1" name = "dogGetAlong[]"
+                                    value = "Other Cats">
+                                Other cat(s) </label>
+                                <label><input type ="checkbox" id = "fchild1" name = "dogGetAlong[]"
+                                    value = "Children">
+                                Young children </label>
+                                <label><input type ="checkbox" id = "fnone1" name = "dogGetAlong[]"
+                                    value = "None">
+                                None of the above </label><br><br>    
+                            
+                                <br><input type ="submit" value = "Find Dogs">
+                                <input type = "reset" value = "Reset">
+                                <br><br>
+                            </form>
+                        </div>
+                    </section>
+                </fieldset>
+            </div>    
+        </div>
+    </div>
+    <script>
+
+    </script>
+    <script src = "script/findForm.js"></script>
+    <%- include('footer.ejs')%>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Furry Finds Center</title>
+        <link rel="stylesheet" href="css/styleQ7.css">
+        <script src="script/time.js"></script>
+
+    </head>
+    <body>
+    <%- include('header.ejs')%>
+    <%- include('sidebar.ejs')%>
+    <div class = "content">   
+        <% if (message) { %>
+            <%- include('msg.ejs') %>
+          <% } %>          
+        <div class = "signup">
+                <div class = "tabcontent">
+                    <form id = "signup" action = "/create" method = "post">
+                        <fieldset id = "signuppage">
+                            <legend class = "legend">Create an account</legend>
+                            Username:<br>
+                            <input type="text" name="user" placeholder="Username" id = "user" required><br><br>
+                            Password:<br>
+                            <input type="password" name="pass" placeholder="Password" id = "pass" required><br><br>
+                            <!-- submit button -->
+                            <input type="submit" value = "Create Account"><br><br>
+                            <span>Already have an account? <a href="/login" id = "link">Login</a><br>
+                            
+                            <p id = "normal">Username can contain:</p>
+                            <ul id = "usernamereq">
+                                <li>Uppercase letters</li>
+                                <li>Lowercare letters</li>
+                                <li>Digits</li>
+                            </ul>
+                            <p id = "normal">Password must contain:</p>
+                            <ul id = "passwordreq">
+                                <li>Letters and digits only</li>
+                                <li>At least 4 characters</li>
+                                <li>At least one letter</li>
+                                <li>At least one digit</li>
+                            </ul>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <script src="script/validateForm.js"></script>
+        <%- include('footer.ejs')%>
+    </body>
+</html>

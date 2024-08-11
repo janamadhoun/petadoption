@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furry Finds Center</title>
+    <link rel="stylesheet" href="css/styleQ7.css">
+    <script src="script/time.js"></script>
+</head>
+
+
+<body>
+   
+<%- include('header.ejs')%>
+<%- include('sidebar.ejs')%>
+<div class = "content">
+    <div class = "home" class = "tabcontent">
+        <h2>Welcome to the Furry Finds Center!</h2>
+        <p class = "normal">Your trusted partner in finding loving homes for dogs and cats.</p><br><br>
+        <fieldset id = "aboutus">
+            <legend class = "legend">About Us</legend><br>
+            <p>
+                At Furry Finds, we are dedicated to finding loving homes for dogs and cats in need. 
+                Founded in 2024, our mission is to provide a safe home for abandoned, neglected, and homeless pets, 
+                while educating the public about responsible pet ownership. Our team works tirelessly to match pets with 
+                their forever families, ensuring every animal receives the care and 
+                attention they deserve. All pets deserve a second chance and we are committed to making a positive impact in our community, 
+                one adoption at a time. Join us in our mission to give every pet a loving home.
+            </p>
+        </fieldset><br>
+        <fieldset id = "feedback">
+            <legend class="legend">What People Are Saying</legend>
+            <p> "Adopting Max was the best decision we ever made. He’s a part of our family now!" – Sarah W. </p><br>
+            <p> "The process was smooth, and the staff was incredibly supportive. Highly recommend!" – John D.</p>
+        </fieldset><br><br>
+        <p class = "normal"><a href = "/find" id="link">Find</a> your new adorable pet, learn how you can get involved, or find resources for pet care.</p>
+    </div>
+</div>
+<%- include('footer.ejs') %>
+</body>
+</html>
+

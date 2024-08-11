@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furry Finds Center</title>
+    <link rel="stylesheet" href="css/styleQ7.css">
+    <script src="script/time.js" defer></script>
+</head>
+<body>
+    
+    <%- include('header.ejs')%>
+    <%- include('sidebar.ejs')%>
+    <div class = "content">
+    <section class = "tabcontent">    
+       <div class="content-area"> 
+        <% if (pets && pets.length > 0) { %>
+            <h2 id = "petitle">Available Pets</h2><br>
+            <div class="petlist">
+                <% pets.forEach(pet => { %>
+                    <div class="pet">
+                        <fieldset id = "petsavail"><br>
+                            <p><b>Breed:</b> <%= pet.breed %></p>
+                            <p><b>Age:</b> <%= pet.age %></p>
+                            <p><b>Gender:</b> <%= pet.gender %></p>
+                            <p><b>Gets along with:</b> <%= pet.dogsCompatibility %>, <%= pet.catsCompatibility %></p>
+                            <p><b>Children Compatibility:</b> <%= pet.childrenCompatibility %></p>
+                            <p><b>Comments:</b> <%= pet.comments %></p>
+                            <p><b>Owner Name:</b> <%= pet.ownerGivenName %> <%= pet.ownerSurname %></p>
+                            <p><b>Owner Email:</b> <%= pet.ownerEmail %></p><br>
+                            <button class="button">Interested</button>
+                        </fieldset><br>
+                        
+                    </div>
+                <% }); %>
+            </div>
+       </div>
+        <% } else { %>
+            <p class = "nonefound">No pets found matching your criteria.</p>
+            <a href = "/find" id = "link" class = "nonefound">Try Another Pet</a>
+        <% } %>
+    </div>
+    </div>
+    <%- include('footer.ejs')%>
+</body>
+</html>
