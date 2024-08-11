@@ -4,7 +4,7 @@ const bodyParser = require('body-parser');
 const session = require('express-session');
 const fs = require('fs');
 const app = express();
-const port = process.env.PORT || 8000;
+const port = 8000;
 
 //middleware to parse form data
 app.use(express.urlencoded({extended:true}));
